@@ -1,1 +1,11 @@
-<%= @message %>
+<div class="guess">
+	<ol>
+		<li><%= @guess %></li>
+	</ol>
+</div>
+
+<%= render 'message', message: @message %>
+
+<%= render 'form', count: @count %>
+
+</div>

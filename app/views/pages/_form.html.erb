@@ -1,0 +1,6 @@
+<div class="form">
+	<%= form_tag guess_url(num: "#{count}"), remote: true do %>
+		<%= label_tag :guess, "Guess again:" %>
+		<%= text_field_tag :guess %>
+		<%= submit_tag "Enter" %>
+	<% end %>

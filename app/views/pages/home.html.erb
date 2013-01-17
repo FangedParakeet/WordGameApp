@@ -1,7 +1,7 @@
 Guess The Word
 
 <%= form_tag play_url do %>
-	<%= label_tag "Have a guess:" %>
+	<%= label_tag :guess, "Have a guess:" %>
 	<%= text_field_tag :guess %>
 	
 	<%= submit_tag "Enter" %>
