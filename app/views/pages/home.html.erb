@@ -1,0 +1,27 @@
+Guess The Word
+
+<%= form_tag play_url do %>
+	<%= label_tag "Have a guess:" %>
+	<%= text_field_tag :guess %>
+	
+	<%= submit_tag "Enter" %>
+<% end %>
+
+<table border=1>
+	<thead>
+		<tr>
+			<th>#</th>
+			<th>Word</th>
+			<th>Guessed By</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @guesses.each do |guess| %>
+			<tr>
+				<td><%= guess.id %></td>
+				<td>"<%= guess.word %>"</td>
+				<td><%= guess.winner %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
