@@ -1,0 +1,3 @@
+$(".guess ol").append("<li><%= j(@guess) %></li>");
+$(".response").replaceWith("<%= j(render 'message', message: @message) %>")
+$(".form").replaceWith("<%= j(render 'correct') %>")

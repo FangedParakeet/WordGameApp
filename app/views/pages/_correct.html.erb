@@ -1,1 +1,7 @@
-<%= form_tag  %>
+<%= form_tag correct_url do %>
+	<%= label_tag :name, "Enter your name:" %>
+	<%= text_field_tag :name %><br />
+	<%= label_tag :word, "Enter the new word:" %>
+	<%= text_field_tag :word %><br />
+	<%= submit_tag "Enter" %>
+<% end %>

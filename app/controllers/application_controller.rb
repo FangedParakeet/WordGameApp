@@ -29,7 +29,7 @@ class ApplicationController < ActionController::Base
       if is_def
         message = "You guessed it!"
       else
-        message = "Your guess is not a word."
+        message = "Your guess is not a word. Try again."
       end
     end
     return message
